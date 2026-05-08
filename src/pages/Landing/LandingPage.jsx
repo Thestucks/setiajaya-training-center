@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
+import { assetUrl } from '../../utils/assetUrl';
 import { useEffect } from 'react';
 
 export default function LandingPage() {
@@ -31,7 +32,7 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-            <img src="/assets/img/landing.jpg" className="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300" />
+            <img src={assetUrl('assets/img/landing.jpg')} className="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300" />
           </div>
         </div>
       </div>

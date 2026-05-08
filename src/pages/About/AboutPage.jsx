@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { assetUrl } from '../../utils/assetUrl';
 
 export default function AboutPage() {
   useEffect(() => {
@@ -19,7 +20,7 @@ export default function AboutPage() {
             className="col-lg-7 position-relative about-img"
             style={{
               backgroundRepeat: 'no-repeat',
-              backgroundImage: "url('/assets/img/sjm-company-profile.jpg')"
+              backgroundImage: `url('${assetUrl('assets/img/sjm-company-profile.jpg')}')`
             }}
             data-aos="fade-up"
             data-aos-delay="150"

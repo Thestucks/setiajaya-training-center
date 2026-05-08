@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { useState } from 'react';
+import { assetUrl } from '../../utils/assetUrl';
 
 export default function Header() {
   const { user, logout } = useAuth();
@@ -23,7 +24,7 @@ export default function Header() {
       <div className="container d-flex align-items-center justify-content-between">
 
         <Link to="/" className="logo d-flex align-items-center me-auto me-lg-0">
-          <img src="/assets/img/sjm-logo.svg" alt="logo" height="96px" />
+          <img src={assetUrl('assets/img/sjm-logo.svg')} alt="logo" height="96px" />
         </Link>
 
         <nav id="navbar" className="navbar">
